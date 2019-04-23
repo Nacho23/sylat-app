@@ -1,0 +1,28 @@
+<!-- -->
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-title>
+      <span ion-text>Lista de ahijados/as</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="common-bg">
+  <!--booking form-->
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+
+      <ion-list>
+        <ion-item *ngFor="let item of godsonList">
+            <ion-button (click)="openUserDetals(item.uuid)">
+              <p>{{item.first_name + ' ' + item.last_name}}</p>
+              <small>{{item.rut + '-' + item.rut_dv}}</small>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+
+    </div>
+  </div>
+</ion-content>

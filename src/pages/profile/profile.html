@@ -1,0 +1,105 @@
+<!-- -->
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-title>
+      <span ion-text>Perfil</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="common-bg">
+  <!--slides-->
+  <ion-slides class="to-top" pager>
+    <ion-slide>
+      <img src="../../assets/img/trip/thumb/trip_1.jpg" alt="">
+    </ion-slide>
+  </ion-slides>
+
+  <!--services-->
+  <ion-grid class="border-bottom dark-bg">
+    <ion-row>
+      <ion-col text-center>
+        <div class="text-sm">
+          <div>
+            <ion-icon name="user" class="text-white"></ion-icon>
+            <span ion-text color="light">{{first_name}}</span>
+            <ion-icon name="email" margin-left class="text-white"></ion-icon>
+            <span ion-text color="light">{{email}}</span>
+            <ion-icon name="phone" margin-left class="text-white"></ion-icon>
+            <span ion-text color="light">{{phone_mobile}}</span>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--high light-->
+  <div class="border-bottom" padding>
+    <span ion-text color="dark" class="bold">Información</span>
+    <ul class="highlight">
+      <!--<li *ngFor="let highlight of trip.highlights">
+        <ion-icon name="checkmark" class="text-green"></ion-icon>
+        <span ion-text color="primary">{{ highlight }}</span>
+      </li>-->
+      <li>
+        <ion-icon name="arrow-dropright" class="text-green"></ion-icon>
+        <span ion-text color="primary">{{rut}}-{{rut_dv}}</span>
+      </li>
+    </ul>
+  </div>
+
+  <!--booking form-->
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <h5>Información personal</h5>
+
+      <!--choose guest-->
+      <ion-grid class="filters" no-padding margin-top>
+        <ion-row>
+          <ion-col class="adult" width-70>
+            <ion-item>
+              <ion-input type="text" [(ngModel)]='first_name' placeholder='Nombre'></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row margin-top>
+          <ion-col width-70>
+            <ion-item>
+              <ion-input type="text" [(ngModel)]='last_name' placeholder='Apellido'></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row margin-top>
+          <ion-col width-70>
+            <ion-item>
+              <ion-input type="text" [(ngModel)]='phone_mobile' placeholder='Teléfono'></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row margin-top>
+          <ion-col width-70>
+            <ion-item>
+              <ion-input type="text" [(ngModel)]='address_town' placeholder='Ciudad de origen'></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row margin-top>
+          <ion-col width-70>
+            <ion-item>
+              <ion-input type="text" [(ngModel)]='more' placeholder='Algo más'></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div padding class="form-bottom">
+      <button ion-button class="pull-right btn-block" color="secondary" tappable (click)="save(first_name, last_name, phone_mobile, address_town)">
+        Guardar
+      </button>
+      <div class="clear"></div>
+    </div>
+  </div>
+</ion-content>

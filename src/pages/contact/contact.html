@@ -1,0 +1,50 @@
+<!-- -->
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-title>
+      <span ion-text>Contactar a la escuela</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="common-bg">
+  <!--booking form-->
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <h5>Enviar mensaje</h5>
+
+      <!--choose guest-->
+      <ion-grid class="filters" no-padding margin-top>
+        <ion-row>
+          <ion-col class="adult" width-70>
+            <ion-item>
+              <ion-label floating>
+                <ion-icon name="bookmark" item-start class="text-primary"></ion-icon>
+                Título
+              </ion-label>
+              <ion-input type="text" [(ngModel)]='title'></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row margin-top>
+          <ion-col width-70>
+            <ion-item>
+              <ion-label floating>
+                <ion-icon name="text" item-start class="text-primary"></ion-icon>
+                Mensaje</ion-label>
+              <ion-textarea [(ngModel)]='body'></ion-textarea>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div padding class="form-bottom">
+      <button ion-button class="pull-right btn-block" color="secondary" tappable (click)="send(title, body)">{{titleButton}}
+      </button>
+      <div class="clear"></div>
+    </div>
+  </div>
+</ion-content>
