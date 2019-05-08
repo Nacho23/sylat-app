@@ -21722,6 +21722,10 @@ page-checkout-trip .item.no-border .item-inner [item-end],
   margin: 0;
 }
 
+page-godson-details h6 {
+  margin: 15px;
+}
+
 page-godson-list .back-option {
   background: darkgray;
 }
