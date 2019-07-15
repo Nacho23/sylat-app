@@ -11,17 +11,17 @@ export let NAVGODSON = [
     {
       id: 1,
       name: "Responder preguntas",
-      thumb: "assets/img/trip/thumb/trip_1.jpg",
+      thumb: "assets/imgs/question-app.png",
     },
     {
       id: 3,
       name: "Ver perfil",
-      thumb: "assets/img/trip/thumb/trip_3.jpg",
+      thumb: "assets/imgs/profile-app.png",
     },
     {
       id: 4,
       name: "Contactar a la escuela",
-      thumb: "assets/img/trip/thumb/trip_4.jpg",
+      thumb: "assets/imgs/contact-app.png",
     }
 ]
 
@@ -29,22 +29,22 @@ export let NAVGODFATHER = [
     {
       id: 5,
       name: "Lista de ahijados/as",
-      thumb: "assets/img/trip/thumb/trip_1.jpg",
+      thumb: "assets/imgs/navgodson/list-godsons.png",
     },
     {
       id: 6,
       name: "Preguntas realizadas",
-      thumb: "assets/img/trip/thumb/trip_2.jpg",
+      thumb: "assets/imgs/question-app.png",
     },
     {
       id: 3,
       name: "Ver perfil",
-      thumb: "assets/img/trip/thumb/trip_3.jpg",
+      thumb: "assets/imgs/profile-app.png",
     },
     {
       id: 4,
       name: "Contactar a la escuela",
-      thumb: "assets/img/trip/thumb/trip_4.jpg",
+      thumb: "assets/imgs/contact-app.png",
     }
 ]
 

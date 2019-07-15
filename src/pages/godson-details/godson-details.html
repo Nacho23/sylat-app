@@ -44,18 +44,31 @@
       </ion-list>
     </div>
   </div>
+  <ion-row>
+    <ion-col size="5" style="margin-left: 10px;">
+      <button ion-button class="pull-right btn-block btn-sm" color="success" tappable (click)="generateHistory(0)">
+        Estándar
+      </button>
+    </ion-col>
+    <ion-col size="5" style="margin-right: 10px;">
+      <button ion-button class="btn-block btn-sm" color="danger" tappable (click)="generateHistory(1)">
+        Urgente
+      </button>
+    </ion-col>
+  </ion-row>
   <div class="row">
     <div class="col">
       <h6>Historias</h6>
     </div>
   </div>
-  <div class="booking-form card round" margin>
+  <div class="booking-form card round" margin *ngFor="let post of postList">
     <div class="border-bottom" padding>
       <ion-list>
         <ion-item>
-            <ion-button (click)="openUserDetals(item.uuid)">
-              <p>asdad</p>
-              <small>asdsad</small>
+            <ion-button (click)="openUserDetals(post.uuid)">
+              <small class="pull-right" style="color: gray">{{post.created_at}}</small>
+              <p>{{post.title}}</p>
+              <small>{{post.body}}</small>
           </ion-button>
         </ion-item>
       </ion-list>

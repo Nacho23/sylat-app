@@ -26,6 +26,7 @@ import {ContactPage} from '../pages/contact/contact';
 import {GodsonListPage} from '../pages/godson-list/godson-list';
 import {GodsonDetailsPage} from '../pages/godson-details/godson-details';
 import {NotificationsPage} from "../pages/notifications/notifications";
+import {HistoryPage} from "../pages/history/history";
 import {RegisterPage} from "../pages/register/register";
 import {SearchLocationPage} from "../pages/search-location/search-location";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
@@ -57,6 +58,7 @@ import { PostProvider } from '../providers/post/post';
     GodsonDetailsPage,
     LocalWeatherPage,
     NotificationsPage,
+    HistoryPage,
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
@@ -83,6 +85,7 @@ import { PostProvider } from '../providers/post/post';
     GodsonDetailsPage,
     LocalWeatherPage,
     NotificationsPage,
+    HistoryPage,
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
