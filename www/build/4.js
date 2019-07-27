@@ -1,14 +1,14 @@
 webpackJsonp([4],{
 
-/***/ 477:
+/***/ 480:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GodsonDetailsPageModule", function() { return GodsonDetailsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GodsonListPageModule", function() { return GodsonListPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__godson_details__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__godson_list__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var GodsonDetailsPageModule = /** @class */ (function () {
-    function GodsonDetailsPageModule() {
+var GodsonListPageModule = /** @class */ (function () {
+    function GodsonListPageModule() {
     }
-    GodsonDetailsPageModule = __decorate([
+    GodsonListPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__godson_details__["a" /* GodsonDetailsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__godson_list__["a" /* GodsonListPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__godson_details__["a" /* GodsonDetailsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__godson_list__["a" /* GodsonListPage */]),
             ],
         })
-    ], GodsonDetailsPageModule);
-    return GodsonDetailsPageModule;
+    ], GodsonListPageModule);
+    return GodsonListPageModule;
 }());
 
-//# sourceMappingURL=godson-details.module.js.map
+//# sourceMappingURL=godson-list.module.js.map
 
 /***/ })
 

@@ -21750,34 +21750,6 @@ page-home ion-list ion-datetime,
   padding-left: 0;
 }
 
-page-search-location ion-input,
-page-search-location ion-input::-webkit-input-placeholder,
-.search-location ion-input,
-.search-location ion-input::-webkit-input-placeholder {
-  color: #fff;
-}
-
-page-search-location ion-input,
-page-search-location ion-input:-ms-input-placeholder,
-.search-location ion-input,
-.search-location ion-input:-ms-input-placeholder {
-  color: #fff;
-}
-
-page-search-location ion-input,
-page-search-location ion-input::placeholder,
-.search-location ion-input,
-.search-location ion-input::placeholder {
-  color: #fff;
-}
-
-page-account .card,
-.settings .card {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  overflow: hidden;
-}
-
 page-trip-detail ul.highlight,
 .trip-detail ul.highlight {
   padding-left: 0;
@@ -21816,6 +21788,38 @@ page-trip-detail .booking-form .form-bottom,
 page-trip-detail .booking-form .form-bottom .pull-right,
 .trip-detail .booking-form .form-bottom .pull-right {
   margin-left: auto;
+}
+
+page-question .toast-danger {
+  background-color: red !important;
+}
+
+page-search-location ion-input,
+page-search-location ion-input::-webkit-input-placeholder,
+.search-location ion-input,
+.search-location ion-input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+page-search-location ion-input,
+page-search-location ion-input:-ms-input-placeholder,
+.search-location ion-input,
+.search-location ion-input:-ms-input-placeholder {
+  color: #fff;
+}
+
+page-search-location ion-input,
+page-search-location ion-input::placeholder,
+.search-location ion-input,
+.search-location ion-input::placeholder {
+  color: #fff;
+}
+
+page-account .card,
+.settings .card {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 page-trips .card,

@@ -54,7 +54,7 @@ export class HistoryPage {
             }
         }
     );
-}
+  }
 
   generate(title, category, body) {
     let user_sender_id = (this.currentUser.id).toString();

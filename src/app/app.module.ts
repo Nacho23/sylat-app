@@ -28,14 +28,16 @@ import {GodsonDetailsPage} from '../pages/godson-details/godson-details';
 import {NotificationsPage} from "../pages/notifications/notifications";
 import {HistoryPage} from "../pages/history/history";
 import {RegisterPage} from "../pages/register/register";
+import { QuestionDetailsPage } from '../pages/question-details/question-details';
 import {SearchLocationPage} from "../pages/search-location/search-location";
-import {TripDetailPage} from "../pages/trip-detail/trip-detail";
+import {ListQuestionPage} from "../pages/listQuestions/list-question";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import { AuthProvider } from '../providers/auth/auth';
 import { UserProvider } from '../providers/user/user';
 import { CommonProvider } from '../providers/common/common';
 import { PostProvider } from '../providers/post/post';
+import { QuestionProvider } from '../providers/question/question';
 
 // import services
 // end import services
@@ -60,8 +62,9 @@ import { PostProvider } from '../providers/post/post';
     NotificationsPage,
     HistoryPage,
     RegisterPage,
+    QuestionDetailsPage,
     SearchLocationPage,
-    TripDetailPage,
+    ListQuestionPage,
     TripsPage
   ],
   imports: [
@@ -87,8 +90,9 @@ import { PostProvider } from '../providers/post/post';
     NotificationsPage,
     HistoryPage,
     RegisterPage,
+    QuestionDetailsPage,
     SearchLocationPage,
-    TripDetailPage,
+    ListQuestionPage,
     TripsPage
   ],
   providers: [
@@ -103,6 +107,7 @@ import { PostProvider } from '../providers/post/post';
     AppStorageService,
     CommonProvider,
     PostProvider,
+    QuestionProvider,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

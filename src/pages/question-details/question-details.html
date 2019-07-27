@@ -1,0 +1,34 @@
+<!--
+  Generated template for the QuestionDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>questionDetails</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ng-container *ngTemplateOutlet="brief"></ng-container>
+</ion-content>
+
+<ng-template #brief>
+    <div>Pregunta corta</div>
+</ng-template>
+<ng-template #paragraph>
+    <div>Párrafo</div>
+</ng-template>
+<ng-template #multiple_choice>
+    <div>Selección multiple</div>
+</ng-template>
+<ng-template #checkbox>
+    <div>Cargando...</div>
+</ng-template>
+<ng-template #loading>
+    <div>Cargando...</div>
+</ng-template>

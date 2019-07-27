@@ -16,9 +16,9 @@
 
       <ion-list>
         <ion-item *ngFor="let item of godsonList">
-            <ion-button (click)="openUserDetals(item.uuid)">
-              <p>{{item.first_name + ' ' + item.last_name}}</p>
-              <small>{{item.rut + '-' + item.rut_dv}}</small>
+          <ion-button (click)="openUserDetals(item.uuid)">
+            <p>{{item.first_name + ' ' + item.last_name}}</p>
+            <small>{{item.rut + '-' + item.rut_dv}}</small>
           </ion-button>
         </ion-item>
       </ion-list>

@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {NavController} from "ionic-angular";
 import {TripService} from "../../services/navSelector";
-import {TripDetailPage} from "../trip-detail/trip-detail";
+import {ListQuestionPage} from "../listQuestions/list-question";
 import { UserProvider } from "../../providers/user/user";
 import { AppStorageService } from "../../services/app-storage-service";
 import { QuestionPage } from "../question/question";
@@ -37,7 +37,7 @@ export class HomePage implements OnInit {
     if (id == 1) {
       this.nav.push(QuestionPage);
     } else if (id == 2) {
-      this.nav.push(TripDetailPage, {id: id});
+      this.nav.push(ListQuestionPage, {id: id});
     } else if (id == 3) {
       this.nav.push(ProfilePage);
     } else if (id == 4) {
@@ -45,7 +45,7 @@ export class HomePage implements OnInit {
     } else if (id == 5) {
       this.nav.push(GodsonListPage);
     } else if (id == 6) {
-      this.nav.push(TripDetailPage, {id: id});
+      this.nav.push(ListQuestionPage, {id: id});
     }
   }
 }
