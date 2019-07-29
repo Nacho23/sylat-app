@@ -19,10 +19,12 @@ export class QuestionDetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
       this.currentQuestion = this.navParams.get('question');
+      this.questionType = this.navParams.get('questionType');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad QuestionDetailsPage');
+  saveRequest(request) {
+    console.log('request', request);
+    console.log('question', this.currentQuestion);
   }
 
 }

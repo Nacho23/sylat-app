@@ -81,7 +81,11 @@ export class QuestionPage {
     this.questionProvider.getAnswerResource(question_id).subscribe(
       event => {
         if (event.body) {
-          this.navCtrl.push(QuestionDetailsPage, {question: event.body.data.question});
+          this.navCtrl.push(QuestionDetailsPage, {
+            question: event.body.data.question,
+            questionType: event.body.data.question.type
+          });
+          //this.navCtrl.push(QuestionDetailsPage, {question: 2});
         }
       }
     )

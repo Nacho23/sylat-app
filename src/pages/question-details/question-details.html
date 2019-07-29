@@ -6,28 +6,110 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>questionDetails</ion-title>
+  <ion-navbar  color="primary">
+    <ion-title>
+      <span ion-text>Preguntas</span>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+  <div *ngIf="questionType == 'brief'">
     <ng-container *ngTemplateOutlet="brief"></ng-container>
+  </div>
+  <div *ngIf="questionType == 'paragraph'">
+    <ng-container *ngTemplateOutlet="paragraph"></ng-container>
+  </div>
+  <div *ngIf="questionType == 'multiple_choice'">
+    <ng-container *ngTemplateOutlet="multiple_choice"></ng-container>
+  </div>
+  <div *ngIf="questionType == 'checkbox'">
+    <ng-container *ngTemplateOutlet="checkbox"></ng-container>
+  </div>
+  <div *ngIf="questionType == 'scale'">
+    <ng-container *ngTemplateOutlet="scale"></ng-container>
+  </div>
 </ion-content>
 
 <ng-template #brief>
-    <div>Pregunta corta</div>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <small style="color: gray">{{currentQuestion ? currentQuestion.created_at : ''}}</small><br>
+        {{currentQuestion ? currentQuestion.description : ''}}
+      </ion-item>
+    </div>
+  </div>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <ion-input type="text" placeholder="Respuesta aquí" [(ngModel)]="request"></ion-input>
+      </ion-item>
+    </div>
+  </div>
+  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
+    Guardar
+  </button>
 </ng-template>
 <ng-template #paragraph>
-    <div>Párrafo</div>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <small style="color: gray">{{currentQuestion ? currentQuestion.created_at : ''}}</small><br>
+        {{currentQuestion ? currentQuestion.description : ''}}
+      </ion-item>
+    </div>
+  </div>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <ion-textarea placeholder="Escribe tu respuesta aquí" rows="4" [(ngModel)]="request"></ion-textarea>
+      </ion-item>
+    </div>
+  </div>
+  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
+    Guardar
+  </button>
 </ng-template>
 <ng-template #multiple_choice>
-    <div>Selección multiple</div>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <small style="color: gray">{{currentQuestion ? currentQuestion.created_at : ''}}</small><br>
+        {{currentQuestion ? currentQuestion.description : ''}}
+      </ion-item>
+    </div>
+  </div>
+  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
+    Guardar
+  </button>
 </ng-template>
 <ng-template #checkbox>
-    <div>Cargando...</div>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <small style="color: gray">{{currentQuestion ? currentQuestion.created_at : ''}}</small><br>
+        {{currentQuestion ? currentQuestion.description : ''}}
+      </ion-item>
+    </div>
+  </div>
+  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
+    Guardar
+  </button>
+</ng-template>
+<ng-template #scale>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <small style="color: gray">{{currentQuestion ? currentQuestion.created_at : ''}}</small><br>
+        {{currentQuestion ? currentQuestion.description : ''}}
+      </ion-item>
+    </div>
+  </div>
+  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
+    Guardar
+  </button>
 </ng-template>
 <ng-template #loading>
     <div>Cargando...</div>
