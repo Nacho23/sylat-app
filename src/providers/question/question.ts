@@ -29,6 +29,12 @@ export class QuestionProvider {
     return this.http.get<any>(this.api + `/unit/${unit_id}/question`, {reportProgress: true, observe: 'events', headers:headers}).pipe();
   }
 
+  postAnswerCollection(userId, answer): Observable<any> {
+    let params = Object.assign(answer);
+    let headers = new HttpHeaders().set('Content-Type', 'application/json').set('x-access-token', this.token);
+    return this.http.post<any>(this.api + `/user/${userId}/answer`, params, {reportProgress: true, observe: 'events', headers:headers}).pipe();
+  }
+
   getAnswerCollection(query): Observable<any> {
     const params = new HttpParams().set('user_id', query.user_id);
     let headers = new HttpHeaders().set('Content-Type', 'application/json').set('x-access-token', this.token);

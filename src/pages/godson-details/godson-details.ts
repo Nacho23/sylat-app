@@ -11,7 +11,6 @@ import { HistoryPage } from '../history/history';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-godson-details',
   templateUrl: 'godson-details.html',

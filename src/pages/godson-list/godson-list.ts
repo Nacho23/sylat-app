@@ -4,7 +4,6 @@ import { AppStorageService } from '../../services/app-storage-service';
 import { UserProvider } from '../../providers/user/user';
 import { GodsonDetailsPage } from '../godson-details/godson-details';
 
-@IonicPage()
 @Component({
   selector: 'page-godson-list',
   templateUrl: 'godson-list.html',

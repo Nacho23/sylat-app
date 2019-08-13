@@ -11,7 +11,6 @@ import { PostProvider } from '../../providers/post/post';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-history',
   templateUrl: 'history.html',

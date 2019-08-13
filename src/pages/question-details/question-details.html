@@ -81,6 +81,15 @@
       </ion-item>
     </div>
   </div>
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item>
+        <ion-select placeholder="Seleccione respuesta" [(ngModel)]="request">
+          <ion-option *ngFor="let option of optionsQuestion" value="{{option.value}}">{{option.value}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
   <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
     Guardar
   </button>
@@ -94,7 +103,15 @@
       </ion-item>
     </div>
   </div>
-  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding>
+      <ion-item *ngFor="let option of optionsQuestion">
+        <ion-label>{{option.value}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="option.isChecked" (click)="selectOption(option)"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <button ion-button icon-start block color="dark" tappable (click)="saveRequestCheckbox()">
     Guardar
   </button>
 </ng-template>
@@ -107,7 +124,12 @@
       </ion-item>
     </div>
   </div>
-  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(request)">
+  <div class="booking-form card round" margin>
+    <div class="border-bottom" padding style="padding-bottom: 80px">
+        <!--<ng5-slider [(ngModel)]="scaleValue" [options]="options"></ng5-slider>-->
+    </div>
+  </div>
+  <button ion-button icon-start block color="dark" tappable (click)="saveRequest(scaleValue)">
     Guardar
   </button>
 </ng-template>

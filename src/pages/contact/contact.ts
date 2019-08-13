@@ -11,7 +11,6 @@ import { AppStorageService } from '../../services/app-storage-service';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html',

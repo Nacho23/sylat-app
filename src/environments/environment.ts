@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  urlApi : 'http://localhost:8000/api',
+  urlApi : 'http://api.sylat.codeits.cl/api',
 };

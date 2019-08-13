@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/marcelo/Documentos/sylat/sylat-app/platforms/android/CordovaLib/build/intermediates/intermediate-jars/release/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="28.0.3"
+        sha1="07656792efe3c97d08988d4d38a149bed4e0c793">
+        <dex dex="/home/marcelo/Documentos/sylat/sylat-app/platforms/android/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+
+</items>

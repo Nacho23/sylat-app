@@ -11,7 +11,6 @@ import { QuestionDetailsPage } from '../question-details/question-details';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-question',
   templateUrl: 'question.html',
@@ -23,6 +22,9 @@ export class QuestionPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private store: AppStorageService, private questionProvider: QuestionProvider,
     public toastCtrl: ToastController) {
+  }
+
+  ionViewWillEnter() {
     this.fillQuestion();
     this.fillAnswer();
   }
@@ -67,7 +69,7 @@ export class QuestionPage {
 
   answerQuestion(question_id) {
     for (let i = 0; i < this.answerList.length; i++) {
-      if (question_id == this.answerList[i].id) {
+      if (question_id == this.answerList[i].question_id) {
         let toast = this.toastCtrl.create({
           message: 'Ya existe respuesta para esta pregunta',
           duration: 3000,
@@ -93,7 +95,7 @@ export class QuestionPage {
 
   questionAnswered(question_id) {
     for (let i = 0; i < this.answerList.length; i++) {
-      if (question_id == this.answerList[i].id) {
+      if (question_id == this.answerList[i].question_id) {
         return true;
       }
     }

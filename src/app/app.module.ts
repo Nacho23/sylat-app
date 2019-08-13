@@ -9,6 +9,8 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
 
+//import { Ng5SliderModule } from 'ng5-slider';
+
 import {ActivityService} from "../services/activity-service";
 import {TripService} from "../services/navSelector";
 import {WeatherProvider} from "../services/weather";
@@ -71,8 +73,9 @@ import { QuestionProvider } from '../providers/question/question';
     BrowserModule,
     HttpClientModule,
     HttpModule,
+    //Ng5SliderModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -1,0 +1,4 @@
+#Sun Aug 11 16:32:00 CLT 2019
+base.0=/home/marcelo/Documentos/sylat/sylat-app/platforms/android/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/home/marcelo/Documentos/sylat/sylat-app/platforms/android/build/intermediates/transforms/dexMerger/debug/0/classes.dex
