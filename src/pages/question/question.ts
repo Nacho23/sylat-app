@@ -30,8 +30,11 @@ export class QuestionPage {
   }
 
   fillQuestion() {
+    let date = new Date();
+    let today = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+    console.log('DASD', today);
     this.store.get('unit_id').then((unit_id) => {
-      this.questionProvider.getQuestionCollection(unit_id).subscribe(
+      this.questionProvider.getQuestionCollection(unit_id, {date: today}).subscribe(
         event => {
             if (event.body) {
                 this.questionList = event.body.data.questions;

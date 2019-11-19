@@ -1,0 +1,20 @@
+<!-- -->
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-title>
+      <span ion-text>Avisos</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="common-bg">
+  <ion-list>
+    <ion-item *ngFor="let new of newList">
+        <small class="pull-right" style="color: gray">{{new.date}}</small>
+        <p>{{new.description}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

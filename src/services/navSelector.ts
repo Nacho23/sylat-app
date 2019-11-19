@@ -22,7 +22,6 @@ export class TripService {
   getItem(id) {
     for (var i = 0; i < this.nav_godson.length; i++) {
       if (this.nav_godson[i].id === parseInt(id)) {
-        console.log('asdasd', this.nav_godson[i]);
         return this.nav_godson[i];
       }
     }

@@ -8,6 +8,7 @@ import { QuestionPage } from "../question/question";
 import { ProfilePage } from "../profile/profile";
 import { ContactPage } from "../contact/contact";
 import { GodsonListPage } from "../godson-list/godson-list";
+import { NewPage } from "../new/new";
 
 @Component({
   selector: 'page-trips',
@@ -34,6 +35,7 @@ export class HomePage implements OnInit {
 
   // view trip detail
   viewDetail(id) {
+    console.log('DDDD', id);
     if (id == 1) {
       this.nav.push(QuestionPage);
     } else if (id == 2) {
@@ -46,6 +48,8 @@ export class HomePage implements OnInit {
       this.nav.push(GodsonListPage);
     } else if (id == 6) {
       this.nav.push(ListQuestionPage, {id: id});
+    } else if (id == 7) {
+      this.nav.push(NewPage);
     }
   }
 }

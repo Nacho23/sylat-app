@@ -88,7 +88,6 @@ export class LoginPage implements OnInit {
         {
           text: 'Send',
           handler: data => {
-            console.log('Send clicked');
             let toast = this.toastCtrl.create({
               message: 'Email was sended successfully',
               duration: 3000,

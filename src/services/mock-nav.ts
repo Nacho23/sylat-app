@@ -22,6 +22,11 @@ export let NAVGODSON = [
       id: 4,
       name: "Contactar a la escuela",
       thumb: "assets/imgs/contact-app.png",
+    },
+    {
+      id: 7,
+      name: "Avisos",
+      thumb: "assets/imgs/contact-app.png",
     }
 ]
 
@@ -44,6 +49,11 @@ export let NAVGODFATHER = [
     {
       id: 4,
       name: "Contactar a la escuela",
+      thumb: "assets/imgs/contact-app.png",
+    },
+    {
+      id: 7,
+      name: "Avisos",
       thumb: "assets/imgs/contact-app.png",
     }
 ]

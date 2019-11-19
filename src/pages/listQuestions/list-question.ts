@@ -17,7 +17,7 @@ export class ListQuestionPage {
 
   fillQuestion() {
     this.store.get('unit_id').then((unit_id) => {
-      this.questionProvider.getQuestionCollection(unit_id).subscribe(
+      this.questionProvider.getQuestionCollection(unit_id, {}).subscribe(
         event => {
             if (event.body) {
                 this.questionList = event.body.data.questions;

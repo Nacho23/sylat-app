@@ -31,6 +31,7 @@ import {NotificationsPage} from "../pages/notifications/notifications";
 import {HistoryPage} from "../pages/history/history";
 import {RegisterPage} from "../pages/register/register";
 import { QuestionDetailsPage } from '../pages/question-details/question-details';
+import { NewPage } from '../pages/new/new';
 import {SearchLocationPage} from "../pages/search-location/search-location";
 import {ListQuestionPage} from "../pages/listQuestions/list-question";
 import {TripsPage} from "../pages/trips/trips";
@@ -40,6 +41,7 @@ import { UserProvider } from '../providers/user/user';
 import { CommonProvider } from '../providers/common/common';
 import { PostProvider } from '../providers/post/post';
 import { QuestionProvider } from '../providers/question/question';
+import { NewProvider } from "../providers/new/new";
 
 // import services
 // end import services
@@ -65,6 +67,7 @@ import { QuestionProvider } from '../providers/question/question';
     HistoryPage,
     RegisterPage,
     QuestionDetailsPage,
+    NewPage,
     SearchLocationPage,
     ListQuestionPage,
     TripsPage
@@ -94,6 +97,7 @@ import { QuestionProvider } from '../providers/question/question';
     HistoryPage,
     RegisterPage,
     QuestionDetailsPage,
+    NewPage,
     SearchLocationPage,
     ListQuestionPage,
     TripsPage
@@ -107,6 +111,7 @@ import { QuestionProvider } from '../providers/question/question';
     WeatherProvider,
     AuthProvider,
     UserProvider,
+    NewProvider,
     AppStorageService,
     CommonProvider,
     PostProvider,

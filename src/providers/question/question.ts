@@ -24,9 +24,10 @@ export class QuestionProvider {
     })
   }
 
-  getQuestionCollection(unit_id): Observable<any> {
+  getQuestionCollection(unit_id, query): Observable<any> {
+    const params = new HttpParams().set('date', query.date);
     let headers = new HttpHeaders().set('Content-Type', 'application/json').set('x-access-token', this.token);
-    return this.http.get<any>(this.api + `/unit/${unit_id}/question`, {reportProgress: true, observe: 'events', headers:headers}).pipe();
+    return this.http.get<any>(this.api + `/unit/${unit_id}/question`, {params, reportProgress: true, observe: 'events', headers:headers}).pipe();
   }
 
   postAnswerCollection(userId, answer): Observable<any> {
